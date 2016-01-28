@@ -17,3 +17,15 @@ h1, h2, h3, h4, h5, h6 {
 .restaurant-box {
   background-color: orange;
 }
+
+.restaurant-box a {
+  text-decoration: none;
+}
+
+.restaurant-box a h2 {
+  color: white;
+}
+
+.restaurant-box a:hover h2 {
+  color: #ccc;
+}
