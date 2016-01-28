@@ -64,4 +64,34 @@ p#about {
 
 .restaurant-box p {
   margin-bottom: 0;
+  /*clear: both;*/
+}
+
+.restaurant-box img {
+  float: right;
+  border-radius: 10px;
+}
+
+.play {
+  height: 50px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: none;
+}
+
+#a {
+  background-color: red;
+}
+
+#b {
+  background-color: blue;
+}
+
+#c {
+  background-color: green;
+}
+
+#d {
+  background-color: purple;
 }
