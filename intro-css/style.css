@@ -1,6 +1,21 @@
 body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: #444;
+
+  /* ALL ONE LINE */
+  /* background: image, repeat, position (horizontal and vertical), attachment (fixed or ); */
+  /*background: url("burgers.jpeg") no-repeat center center fixed;*/
+
+  /* MULTIPLE LINES */
+  background: url("burgers.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9,13 +24,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #title {
-  font-size: 3em;
-  color: red;
+  font-size: 2.5em;
+  color: #79301a;
+  text-align: center;
+}
+
+p#about {
+  font-weight: 900; /* thin 100-900 bold */
+  color: #aaa;
+  line-height: 150%;
   text-align: center;
 }
 
 .restaurant-box {
-  background-color: orange;
+  background-color: rgba(254, 195, 122, 0.8);
+  padding: 30px;
+  margin: 30px 0;
+  border: 1px solid #79301a;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
 }
 
 .restaurant-box a {
@@ -24,8 +53,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .restaurant-box a h2 {
   color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 0;
 }
 
 .restaurant-box a:hover h2 {
   color: #ccc;
+}
+
+.restaurant-box p {
+  margin-bottom: 0;
 }
