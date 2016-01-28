@@ -1,0 +1,19 @@
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Impact, Charcoal, sans-serif;
+  color: #222;
+}
+
+#title {
+  font-size: 3em;
+  color: red;
+  text-align: center;
+}
+
+.restaurant-box {
+  background-color: orange;
+}
