@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practice with JavaScript</title>
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+  <p>
+    Hello, world!
+  </p>
+
+  <div id="steve-martin">
+    <p>Hi, I'm Steve.</p>
+  </div>
+
+  <script type="text/javascript">
+    // $("#steve-martin")
+    //   .show()
+    //   .addClass("funny-guy")
+    //   .click(function (e){
+    //     alert("You clicked me.")
+    //   })
+
+    var div_id = $("div").attr("id");
+    console.log(div_id);
+
+    $("div").attr("id", "martin-short");
+    console.log($("div").attr("id"));
+
+    // $("div").addClass("fancy");
+    // $("div").removeClass("fancy");
+    // $("div").toggleClass("fancy");
+    // $("div").toggleClass("fancy");
+
+    // if ($("div").hasClass("fancy")){
+    //   alert("Oh yeah, you fancy!");
+    // } else {
+    //   alert("Not so fancy now.");
+    // }
+
+    // When I click on martin-short, give me the text contents of that html tag
+    // $(function(){
+    //   $("#martin-short").click(function(e){
+    //     var paragraphText = $(e.target).text();
+    //     alert(paragraphText);
+    //   })
+    // })
+
+    $(function(){
+      $("#martin-short").click(function(e){
+        $(e.target).slideUp();
+      })
+    })
+
+  </script>
+</body>
+</html>
